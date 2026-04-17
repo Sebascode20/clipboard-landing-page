@@ -44,8 +44,58 @@ p {
   text-align: center;
 }
 
-.main {
-  padding-inline: 0.5rem;
+.available {
+  margin-top: 3.5rem;
+}
+
+.available h2 {
+  margin-bottom: 1rem;
+}
+
+.available__paragraph {
+  margin-bottom: 2rem;
+}
+
+.companyLogos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+  gap: 60px;
+}
+
+.companyLogos img {
+  width: 100px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+  background-color: hsl(201 11% 66% / 8%);
+}
+
+.footer__image {
+  width: 50px;
+}
+
+.footer ul li {
+  text-align: center;
+  margin-block: 1.5rem;
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: var(--titles-color);
+}
+
+.footer__social-media-icons img {
+  width: 20px;
+  margin-inline: 0.8rem;
 }
 
 .header {
@@ -62,17 +112,20 @@ p {
 }
 
 .history h1 {
+  margin-top: -25px;
   font-size: clamp(1.7rem, 2.5vw, 2rem);
 }
 
-.history__buttons {
+.history__buttons,
+.available__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.history__buttons button {
+.history__buttons button,
+.available__buttons button {
   padding: 0.8rem 1rem;
   width: 70%;
   border: none;
@@ -83,13 +136,15 @@ p {
   font-weight: 600;
 }
 
-.history__buttons .system--ios {
+.history__buttons .system--ios,
+.available__buttons .system-ios {
   background-color: var(--btn-ios-color);
   border-bottom-color: hsl(171, 66%, 30%);
   box-shadow: 0 8px 10px 1px hsl(171, 66%, 90%);
 }
 
-.history__buttons .system--mac {
+.history__buttons .system--mac,
+.available__buttons .system-mac {
   margin-bottom: 8rem;
   background-color: var(--btn-mac-color);
   border-bottom-color: hsl(233, 100%, 60%);
@@ -100,8 +155,14 @@ p {
   margin: 1rem 2.5rem 2.6rem 2.5rem;
 }
 
-.snippets__paragraph {
-  margin: 1rem 2rem 3.5rem 2.5rem;
+.main {
+  padding-inline: 0.5rem;
+}
+
+.snippets__paragraph,
+.clipboard__paragraph,
+.workflow__paragraph {
+  margin: 1rem 0 3.5rem 0;
 }
 
 .snippets__left-content {
@@ -114,8 +175,9 @@ p {
   object-fit: contain;
 }
 
-.snippets__right-content {
-  margin: 3.5rem 2.5rem 8rem 2.5rem;
+.snippets__right-content,
+.workflow {
+  margin: 3.5rem 0 8rem 0;
 }
 
 .snippets__right-content h3 {
@@ -129,4 +191,22 @@ p {
 
 .snippets__right-content ul li p {
   line-height: 1.6;
+}
+
+.workflow {
+  margin-top: 5rem;
+}
+
+.workflow ul li {
+  margin-block: 4rem;
+  text-align: center;
+  list-style: none;
+}
+
+.workflow ul li img {
+  margin-bottom: 2rem;
+}
+
+.workflow ul li h3 {
+  margin-bottom: 1rem;
 }
